@@ -1,0 +1,137 @@
+<h2> create you're own account </h2>
+<br>
+<form #formInfo="ngForm">
+    <div class="firstName">
+        <label> First Name: </label>
+        &nbsp;
+        <input type="text" name="firstName" placeholder="first name..." [(ngModel)]="user.firstName"
+            #firstNameInfo="ngModel" required minlength="2" maxlength="20" >
+        <span *ngIf="
+        firstNameInfo.errors?.required && 
+        firstNameInfo.invalid && 
+        firstNameInfo.touched"> Missing first name </span>
+        <span *ngIf="firstNameInfo.errors?.pattern && firstNameInfo.invalid && firstNameInfo.touched"> first name must start with a capital first letter </span>
+        <span *ngIf="firstNameInfo.errors && firstNameInfo.errors.minlength " class="fnSpanMin"> At least 2 characters long. </span>
+    </div>
+    <br><br>
+    <div class=" lastName">
+            <label> Last Name: </label>
+            &nbsp;
+            <input type="text" name="lastName" placeholder="last name..." [(ngModel)]="user.lastName"
+                #lastNameInfo="ngModel" required minlength="2" maxlength="20">
+            <span *ngIf="lastNameInfo.errors?.required && lastNameInfo.invalid && lastNameInfo.touched"> Missing Last Name </span>
+    </div>
+    <br><br>
+    <div class="dateOfBirth">
+        <label> Date Of Birth: </label>
+        &nbsp;
+        <input type="date" name="dateOfBirth" placeholder="" [(ngModel)]="user.dateOfBirth" #dateOfBirthInfo="ngModel"
+            required>
+        <span
+            *ngIf="dateOfBirthInfo.errors?.required && dateOfBirthInfo.invalid && dateOfBirthInfo.touched" class="dobLabel"> Missing Date Of Birth </span>
+    </div>
+    <br><br>
+    <div class="email">
+        <label> Email: </label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" name="email" placeholder="Example@gmail.com" class="inputEmail" [(ngModel)]="user.email"
+            #emailInfo="ngModel" required>
+        <span *ngIf="emailInfo.errors?.required && emailInfo.invalid && emailInfo.touched"> Missing Email </span>
+    </div>
+    <br><br>
+    <div class="profilePicture">
+        <label> Profile Picture: </label>
+        &nbsp;
+        <input type="url" name="profilePic" [(ngModel)]="user.avatar" #avatarInfo="ngModel" required>
+        <br><br>
+        <span *ngIf="avatarInfo.errors?.required && avatarInfo.invalid && avatarInfo.touched" class="ppLabel"> Missing Profile Picture </span>
+    </div>
+
+    <img src="../../../assets/images/countries.png">
+
+    <button [disabled]="formInfo.form.invalid" (click)="addUser()"> Submit </button>
+
+</form>
+
+<marquee direction="up" behavior="alternate" onmouseover="stop()" onmouseout="start()">
+    <table class="marqueeTable">
+        <tr>
+            <img src="../../../assets/images/capitals/bangkok.jpg" class="marqueeImg1">
+        </tr>
+        <tr>
+            <img src="../../../assets/images/capitals/egypt.jpg" class="marqueeImg1">
+        </tr>
+        <tr>
+            <img src="../../../assets/images/capitals/jerusalem.jpg" class="marqueeImg1">
+        </tr>
+        <tr>
+            <img src="../../../assets/images/capitals/mexicoCity.jpg" class="marqueeImg1">
+        </tr>
+        <tr>
+            <img src="../../../assets/images/capitals/sidney.jpg" class="marqueeImg1">
+        </tr>
+        <tr>
+            <img src="../../../assets/images/capitals/rome.jpg" class="marqueeImg1">
+        </tr>
+        <tr>
+            <img src="../../../assets/images/capitals/nursultan.jpg" class="marqueeImg1">
+        </tr>
+        <tr>
+            <img src="../../../assets/images/capitals/Jakarta.jpg" class="marqueeImg1">
+        </tr>
+        <tr>
+            <img src="../../../assets/images/capitals/bangkok.jpg" class="marqueeImg1">
+        </tr>
+        <tr>
+            <img src="../../../assets/images/capitals/egypt.jpg" class="marqueeImg1">
+        </tr>
+        <tr>
+            <img src="../../../assets/images/capitals/jerusalem.jpg" class="marqueeImg1">
+        </tr>
+        <tr>
+            <img src="../../../assets/images/capitals/mexicoCity.jpg" class="marqueeImg1">
+        </tr>
+        <tr>
+            <img src="../../../assets/images/capitals/sidney.jpg" class="marqueeImg1">
+        </tr>
+        <tr>
+            <img src="../../../assets/images/capitals/rome.jpg" class="marqueeImg1">
+        </tr>
+        <tr>
+            <img src="../../../assets/images/capitals/nursultan.jpg" class="marqueeImg1">
+        </tr>
+        <tr>
+            <img src="../../../assets/images/capitals/Jakarta.jpg" class="marqueeImg1">
+        </tr>
+        <tr>
+            <img src="../../../assets/images/capitals/bangkok.jpg" class="marqueeImg1">
+        </tr>
+        <tr>
+            <img src="../../../assets/images/capitals/egypt.jpg" class="marqueeImg1">
+        </tr>
+        <tr>
+            <img src="../../../assets/images/capitals/jerusalem.jpg" class="marqueeImg1">
+        </tr>
+        <tr>
+            <img src="../../../assets/images/capitals/mexicoCity.jpg" class="marqueeImg1">
+        </tr>
+        <tr>
+            <img src="../../../assets/images/capitals/sidney.jpg" class="marqueeImg1">
+        </tr>
+        <tr>
+            <img src="../../../assets/images/capitals/bangkok.jpg" class="marqueeImg1">
+        </tr>
+        <tr>
+            <img src="../../../assets/images/capitals/egypt.jpg" class="marqueeImg1">
+        </tr>
+        <tr>
+            <img src="../../../assets/images/capitals/jerusalem.jpg" class="marqueeImg1">
+        </tr>
+        <tr>
+            <img src="../../../assets/images/capitals/mexicoCity.jpg" class="marqueeImg1">
+        </tr>
+        <tr>
+            <img src="../../../assets/images/capitals/sidney.jpg" class="marqueeImg1">
+        </tr>
+    </table>
+</marquee>

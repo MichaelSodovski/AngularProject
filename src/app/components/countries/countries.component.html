@@ -1,0 +1,33 @@
+<ngx-spinner 
+bdColor = "rgba(0, 0, 0, 0.8)" 
+size = "small" color = "#fff" 
+type = "square-jelly-box" 
+>   
+<p style="color: white" > 
+    Loading... 
+</p>
+</ngx-spinner>
+
+<div class="usersTableDiv">
+
+    <input type="text" placeholder="Search.." >
+
+    <table>
+        <tr>
+            <th> Name </th>
+            <th> Native Name </th>
+            <th> Capital </th>
+            <th> Population </th>
+            <th> Flag </th>
+        </tr>
+        <tr *ngFor="let c of allCountries">
+            <td> {{c.name}} </td>
+            <td> {{c.nativeName}} </td>
+            <td> {{c.capital}} </td>
+            <td> {{c.population | number:""}} </td>
+            <td>
+                 <img src="{{c.flag}}" width="80" height="50">
+                </td>
+        </tr>
+    </table>
+</div> 

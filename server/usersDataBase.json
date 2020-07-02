@@ -1,0 +1,28 @@
+{
+  "usersDataBase": [
+    {
+      "id": 1,
+      "firstName": "Elnor",
+      "lastName": "Vardihanov",
+      "dateOfBirth": "04/08/1990",
+      "email": "Example@gmail.com",
+      "avatar": "https://www.facebook.com/photo.php?fbid=2274625029441395&set=a.1389282414642332&type=3&theater"
+    },
+    {
+      "firstName": "Michael",
+      "lastName": "Sodovski",
+      "dateOfBirth": "1990-03-03",
+      "email": "michaelsod90@gmail.com",
+      "avatar": "https://www.google.com/search?q=profile+picture&sxsrf=ALeKk00ouj6lBvv1QtaFYma4tVPJ6IUvQw:1593442619773&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiD7MiqpKfqAhXy0qYKHR9VD_QQ_AUoAXoECA4QAw&biw=1536&bih=722#imgrc=vYO7hTYvdXJEWM",
+      "id": 10
+    },
+    {
+      "firstName": "michael",
+      "lastName": "Sodovski",
+      "dateOfBirth": "1990-03-03",
+      "email": "michaelsod90@gmail.com",
+      "avatar": "https://www.google.com/search?q=profile+picture&sxsrf=ALeKk00ouj6lBvv1QtaFYma4tVPJ6IUvQw:1593442619773&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiD7MiqpKfqAhXy0qYKHR9VD_QQ_AUoAXoECA4QAw&biw=1536&bih=722#imgrc=vYO7hTYvdXJEWM",
+      "id": 11
+    }
+  ]
+}

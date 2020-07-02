@@ -1,0 +1,41 @@
+<ngx-spinner 
+bdColor = "rgba(0, 0, 0, 0.8)" 
+size = "small" color = "#fff" 
+type = "square-jelly-box" 
+>   
+<p style="color: white" > 
+    Loading... 
+</p>
+</ngx-spinner>
+
+<div class="usersTableDiv">
+
+    <input type="text" placeholder="Search.." >
+
+    <table>
+        <tr>
+            <th> First Name </th>
+            <th> Last Name </th>
+            <th> Birth Date </th>
+            <th> Email </th>
+            <th> Avatar </th>
+            <th>  </th>
+            <th>  </th>
+        </tr> 
+        <tr *ngFor="let u of allUsers">
+            <td> {{u.firstName}} </td>
+            <td> {{u.lastName}} </td>
+            <td> {{u.dateOfBirth}} </td>
+            <td> {{u.email}} </td>
+            <td>
+                 <img src="{{u.avatar}}" width="80" height="50">
+                </td>
+            <td> 
+                <button (click)="userDelete(u.id)"> Delete </button> 
+            </td>
+            <td> 
+                <button > Update </button> 
+            </td>
+        </tr>
+    </table>
+</div> 
