@@ -103,7 +103,12 @@ div {
     border-radius: 10px 10px 10px 10px;
     height: 23px;
     width: 70px;
+}
 
+.adminImg {
+    position: relative;
+    right: 120px;
+    bottom: 60px;
 }
 
 

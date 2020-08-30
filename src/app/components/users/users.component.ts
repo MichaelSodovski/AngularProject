@@ -41,4 +41,8 @@ export class UsersComponent implements OnInit {
             alert(err.message);
         }
     }
+
+    public async userUpdate(id: number) {
+        
+    }
 }

@@ -11,18 +11,22 @@ import { NgxSpinnerService } from "ngx-spinner";
 export class CountriesComponent implements OnInit {
 
     public allCountries: countriesModel[];
-    public countries: string;
     public country: countriesModel[];
-
+    public original: countriesModel[];
+    public textToSearch: string;
+   
     constructor(public CountriesService: CountriesService, private spinner: NgxSpinnerService) { }
 
     async ngOnInit() {
+        this.original = await this.CountriesService.getAllCountries();
+        this.country = this.original;
+        
+
         this.spinner.show();
+
         setTimeout(async () => {
-            this.countries = '';
             try {
                 this.allCountries = await this.CountriesService.getAllCountries();
-                this.country = [...this.allCountries];
             }
             catch (err) {
                 alert(err.message);
@@ -31,12 +35,11 @@ export class CountriesComponent implements OnInit {
         }, 2000);
     }
 
-    // public search() {
-    //     this.country = this.countries.filter(srch => {
-    //         srch.name.toLowerCase().includes(this.countries) ||
-    //             srch.capital.toLowerCase().includes(this.countries);
-    //     }
-    //     );
-    // }
+    public onTextChange() {
+        this.country = this.original.filter(
+            c => c.name.toLowerCase().includes(this.textToSearch.toLowerCase()) ||
+              c.capital.toLowerCase().includes(this.textToSearch.toLowerCase())
+        )
+    }
 
 }

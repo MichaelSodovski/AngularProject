@@ -1,0 +1,145 @@
+form {
+    border: 1px lightgrey solid;
+    border-radius: 10px 10px 10px 10px;
+    display: inline-block;
+    padding: 60px;
+    position: relative;
+    bottom: 25px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #F0F8FF;
+    width: 450px;
+    max-width: 450px;
+    height: 485px;
+    
+}
+
+p {
+    position: relative;
+    right: 150px;
+    bottom: 20px;
+}
+
+input {
+    border: 1px lightgrey solid;
+    border-radius: 4px 4px 4px 4px;
+    padding: 4px;
+    float: left;
+    position: relative;
+    left: 10px;
+}
+
+.inputEmail {
+    width: 195px;
+}
+
+label {
+    font-style: italic;
+    float: left;
+}
+
+span {
+    position: relative;
+    left: 205px;
+    bottom: 23px;
+    color: red;
+}
+
+placeholder {
+    font-style: italic;
+}
+
+img {
+    position: relative;
+    right: 60px;
+    top: 50px;
+    height: 70px;
+    width: 70px;
+}
+
+button {
+    border: 1px lightgrey solid;
+    border-radius: 4px 4px 4px 4px;
+    padding: 10px;
+    width: 150px;
+    position: relative;
+    left: 50px;
+    top: 50px;
+}
+
+h2 {
+    border: 1px lightgrey solid;
+    border-radius: 10px 10px 10px 10px;
+    display: inline-block;
+    padding: 10px;
+    position: relative;
+    width: 550px;
+    bottom: 7px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #F0F8FF;
+    
+}
+
+.firstName {
+    width: 265px;
+    height: 26px;
+}
+.lastName {
+    width: 265px;
+    height: 26px;
+}
+.dateOfBirth {
+    width: 265px;
+    height: 30px;
+}
+.email {
+    width: 295px;
+    height: 26px;
+    
+}
+.profilePicture {
+    width: 295px;
+    height: 26px;
+}
+
+marquee {
+    height: 100px;
+    width: 340px;
+    height: 665px;
+    border: black solid 1px;
+    float: left;
+    position: relative;
+    bottom: 81px;
+}
+
+.marqueeTable {
+    border: solid black 1px;
+    position: relative;
+    bottom: 300px;
+    width: 340px;
+    height: 665px;
+    border-collapse: collapse;
+}
+
+.marqueeImg1 {
+    width: 396px;
+    height: 170px;
+
+}
+
+.dobLabel {
+    position: relative;
+    margin-left: 30px;
+}
+.ppLabel {
+    position: relative;
+    display: inline-block;
+    bottom: 40px;
+    margin-left: 70px;;
+}
+
+.fnSpanMin {
+    position: relative;
+    margin-left: 50px;
+}

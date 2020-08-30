@@ -34,8 +34,14 @@
     <div class="email">
         <label> Email: </label>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <input type="text" name="email" placeholder="Example@gmail.com" class="inputEmail" [(ngModel)]="user.email"
+
+<mat-form-field>
+    <input matInput type="text" name="email" placeholder="Example@gmail.com" class="inputEmail" [(ngModel)]="user.email"
             #emailInfo="ngModel" required>
+</mat-form-field>
+        
+
+
         <span *ngIf="emailInfo.errors?.required && emailInfo.invalid && emailInfo.touched"> Missing Email </span>
     </div>
     <br><br>

@@ -34,7 +34,10 @@ type = "square-jelly-box"
                 <button (click)="userDelete(u.id)"> Delete </button> 
             </td>
             <td> 
-                <button > Update </button> 
+                <a routerLink="/products/update/{{u.id}}"> 
+                    <button (click)="userUpdate(u.id)"> Update </button> 
+                </a>
+                
             </td>
         </tr>
     </table>

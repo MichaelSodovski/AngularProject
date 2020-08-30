@@ -16,12 +16,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SignupComponent } from './components/signup/signup.component';
 import { UsersComponent } from './components/users/users.component';
 import { FormsModule } from '@angular/forms';
+import { UptadeComponent } from './components/uptade/uptade.component';
+import { UpdateComponent } from './components/update/update.component';
+
 
 @NgModule({
-  declarations: [LayoutComponent, HeaderComponent, MainComponent, HomeComponent, PageNotFoundComponent, CountriesComponent, MenuComponent, AboutComponent, ContactComponent, SignupComponent, UsersComponent],
+  declarations: [LayoutComponent, HeaderComponent, MainComponent, HomeComponent, PageNotFoundComponent, CountriesComponent, MenuComponent, AboutComponent, ContactComponent, SignupComponent, UsersComponent, UptadeComponent, UpdateComponent],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, NgxSpinnerModule, BrowserAnimationsModule, FormsModule],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [],
   bootstrap: [LayoutComponent]
 })
+
 export class AppModule { }

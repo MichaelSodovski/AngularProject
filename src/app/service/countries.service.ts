@@ -30,5 +30,16 @@ public userDelete(id: number): Promise<undefined> {
     return observable.toPromise();
 }
 
+public getUser(id: number): Promise<undefined> {
+    const observable = this.myHttpClient.get<undefined>("http://localhost:3000/usersDataBase/" + id);
+    return observable.toPromise();
+}
+
+public updateUser(user: usersDataBase): Promise<usersDataBase> {
+    const observable = this.myHttpClient.put<usersDataBase>("http://localhost:3000/usersDataBase/" + user.id, user);
+    return observable.toPromise();
+}
+
+
 
 }
